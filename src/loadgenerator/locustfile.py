@@ -53,11 +53,11 @@ def checkout(l):
     addToCart(l)
     l.client.post("/cart/checkout", {
         'email': 'someone@example.com',
-        'street_address': '1600 Amphitheatre Parkway',
-        'zip_code': '94043',
-        'city': 'Mountain View',
-        'state': 'CA',
-        'country': 'United States',
+        'street_address': '18A, Stephen Court, Park St.',
+        'zip_code': '700016',
+        'city': 'Kolkata',
+        'state': 'WB',
+        'country': 'India',
         'credit_card_number': '4432-8015-6152-0454',
         'credit_card_expiration_month': '1',
         'credit_card_expiration_year': '2039',

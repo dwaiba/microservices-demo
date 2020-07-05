@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/emailservice:v0.1.4-30-gfccaff8@sha256:7809b5709cb292c028010ea1848cc7f82a747498a1b064294a1342ec521d3b92
+        image: dwaiba/emailservice:v0.1.4-31-g1d3fbb2@sha256:7809b5709cb292c028010ea1848cc7f82a747498a1b064294a1342ec521d3b92
         ports:
         - containerPort: 8080
         env:
@@ -69,7 +69,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: dwaiba/checkoutservice:v0.1.4-30-gfccaff8@sha256:1568a7aa1f7bf20b8b2fc96e9c5d8dd90c29ce5d651958906b48318aa2045a6e
+          image: dwaiba/checkoutservice:v0.1.4-31-g1d3fbb2@sha256:1568a7aa1f7bf20b8b2fc96e9c5d8dd90c29ce5d651958906b48318aa2045a6e
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -138,7 +138,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/recommendationservice:v0.1.4-30-gfccaff8@sha256:b56fdd7ae83a5badb0babf5f90255d21d3b729941314e90e947f46f8b869463e
+        image: dwaiba/recommendationservice:v0.1.4-31-g1d3fbb2@sha256:b56fdd7ae83a5badb0babf5f90255d21d3b729941314e90e947f46f8b869463e
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -198,7 +198,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: dwaiba/frontend:v0.1.4-30-gfccaff8-dirty@sha256:90cda00747680b98c5359cd323a2b8bae41aa605b63b710e6eab7a2bc355feb9
+          image: dwaiba/frontend:v0.1.4-31-g1d3fbb2-dirty@sha256:30b0fd63983914b606232898a5bc12264c6f2ebe01f33a6ab87a9b7e0f3cf22e
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -292,7 +292,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/paymentservice:v0.1.4-30-gfccaff8@sha256:0ef16fae07635efca94fcd8e0022d2a4d378ffb581c173d0307bccdff1e93938
+        image: dwaiba/paymentservice:v0.1.4-31-g1d3fbb2@sha256:0ef16fae07635efca94fcd8e0022d2a4d378ffb581c173d0307bccdff1e93938
         ports:
         - containerPort: 50051
         env:
@@ -341,7 +341,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/productcatalogservice:v0.1.4-30-gfccaff8@sha256:19a9407f2c9fa5a42cbb256e89e97721690044514b0d7326d107a67e8a3142f8
+        image: dwaiba/productcatalogservice:v0.1.4-31-g1d3fbb2-dirty@sha256:1682c116e31a888de586fe4e6d000138b5c4c2e815be672bf13ebb3f76436fee
         ports:
         - containerPort: 3550
         env:
@@ -398,7 +398,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/cartservice:v0.1.4-30-gfccaff8@sha256:c7737f35673f6c8788a254ea10f2f760b324fdf6d278d6b3e1c5348d29e8444e
+        image: dwaiba/cartservice:v0.1.4-31-g1d3fbb2@sha256:c7737f35673f6c8788a254ea10f2f760b324fdf6d278d6b3e1c5348d29e8444e
         ports:
         - containerPort: 7070
         env:
@@ -458,7 +458,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: main
-        image: dwaiba/loadgenerator:v0.1.4-30-gfccaff8-dirty@sha256:e67a9579053686986fe63ede34532e4ff03b1e1d80ce6e1896592305b0b5181e
+        image: dwaiba/loadgenerator:v0.1.4-31-g1d3fbb2-dirty@sha256:4f5f4218fa9198212926b7add1aaec660794c0fcfaeffe8a8ce0f56ce70ad780
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -488,7 +488,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/currencyservice:v0.1.4-30-gfccaff8@sha256:8bf8757855156eba44561f034ab83433d50aa25a372083af012cea8e39e0552c
+        image: dwaiba/currencyservice:v0.1.4-31-g1d3fbb2@sha256:8bf8757855156eba44561f034ab83433d50aa25a372083af012cea8e39e0552c
         ports:
         - name: grpc
           containerPort: 7000
@@ -543,7 +543,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: dwaiba/shippingservice:v0.1.4-30-gfccaff8@sha256:d5b3342ef4dded00b44c85020e823502ad2042b14e0471f858f772d8990d28e2
+        image: dwaiba/shippingservice:v0.1.4-31-g1d3fbb2@sha256:d5b3342ef4dded00b44c85020e823502ad2042b14e0471f858f772d8990d28e2
         ports:
         - containerPort: 50051
         env:
@@ -654,7 +654,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: dwaiba/adservice:v0.1.4-30-gfccaff8@sha256:ece360b2b36adb39188864bfcc8fa9f63f5f0e175b8ac7a8b2e541dadc361cb4
+        image: dwaiba/adservice:v0.1.4-31-g1d3fbb2@sha256:ece360b2b36adb39188864bfcc8fa9f63f5f0e175b8ac7a8b2e541dadc361cb4
         ports:
         - containerPort: 9555
         env:
